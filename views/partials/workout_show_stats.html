@@ -30,7 +30,7 @@
       x: { format: 'HH:mm', },
       y: [
         { formatter: function (val, opts) {
-          set_marker( data[opts.dataPointIndex].label, data[opts.dataPointIndex].lat, data[opts.dataPointIndex].lng)
+          setGlobalMapMarker( data[opts.dataPointIndex].label, data[opts.dataPointIndex].lat, data[opts.dataPointIndex].lng)
           return val + " {{ CurrentUser.PreferredUnits.Speed }}"; }
         },
         { formatter: function (val, opts) { return val + " {{ CurrentUser.PreferredUnits.Elevation }}"; } },

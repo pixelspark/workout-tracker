@@ -16,7 +16,7 @@
       with
       .LastPoint
       }}
-      onmouseover="set_marker('{{ template `workout_point_title` . }}', {{ .Lat }}, {{ .Lng }})"
+      onmouseover="setGlobalMapMarker('{{ template `workout_point_title` . }}', {{ .Lat }}, {{ .Lng }})"
       {{
       end
       }}
